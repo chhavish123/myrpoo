@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+    <style>
+        
+    </style>
+	<script type="text/javascript">
+		console.log("Hello World 123");
+		print = function (msg) {
+			return function(){
+				console.log(msg);	
+			}	
+		}
+		printCounter = function(source,count){
+			for (var i = 0; i < count ; i++) {
+				// Requirement add sleep of 1 second
+				/* 
+				1. Internet help is OK
+				2. NO help from any person
+				3. Don't use Async // aWait 
+				*/
+				// setTimeOut / setInterval 
+				// 
+				setTimeout(print(source +":"+i +" seconds are over."),i*1000);  // use for sleep fr 1 sec
+				//print(source +":"+i +" seconds are over.");
+			}
+		}
+	</script>
+
+	<form>
+		<input type="" name="" value="Vivek"><br/>
+		<input type="" name=""><br/>
+		<input type="color" name=""><br/><br/>
+
+		<input type="button" name="" value="B1" onclick="printCounter('B1',12)"><br/><br/>
+		<input type="button" name="" value="B2" onclick="printCounter('B2',25)"><br/><br/>
+		<input type="button" name="" value="Login"><br/>
+	</form>
+</body>
+</html>
